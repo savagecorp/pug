@@ -1345,9 +1345,16 @@ header.blank {
       color: #3CA2B9; }
 
 .table_header, .table_footer, .table_preheader, .table_postfooter {
+  position: relative;
   min-height: 100px; }
 
 .table_content {
   min-height: 200px; }
+
+.table_header, .table_footer, .table_preheader, .table_postfooter, .table_content {
+  position: relative;
+  border: 1px solid transparent; }
+  .table_header:hover, .table_footer:hover, .table_preheader:hover, .table_postfooter:hover, .table_content:hover {
+    border: 1px solid blue; }
 
 /*# sourceMappingURL=style.css.map */

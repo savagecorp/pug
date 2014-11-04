@@ -141,9 +141,41 @@ header {
 
 
 // vidual table default styles
-.table_header, .table_footer, .table_preheader, .table_postfooter {min-height: 100px;}
+
+// tr.options {
+//   position: absolute;
+//   width: 200px;
+//   text-align: right;
+//   right: 10px;
+//   display: none;
+//   z-index: 600;
+//   height: 30px;
+// }
+
+
+.table_header, .table_footer, .table_preheader, .table_postfooter {position: relative; min-height: 100px;}
 
 .table_content {min-height: 200px;}
+
+
+.table_header, .table_footer, .table_preheader, .table_postfooter, .table_content {
+  position: relative;
+  border: 1px solid transparent;
+  &:hover {
+    border: 1px solid blue;
+  }
+
+}
+
+// .table_preheader:hover, .table_header:hover { 
+//   background: red;
+//   tr.options {
+//       display: block;
+//       > td {
+//         top: -30px;
+//       }
+//     }
+// }
 
 
 
