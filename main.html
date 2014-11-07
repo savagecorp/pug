@@ -28,21 +28,21 @@
   </div>
 
   <div class="tools">
-    <a href="#">site options</a>
-    <a href="#">image</a>
-    <a href="#">paragraph</a>
-    <a href="#">button</a>
-    <a href="#">separator</a>
-    <a href="#">video</a>
-    <a href="#">more</a>
-    <a href="#">export</a>
+    <a href="#" class="site_settings" title="Site Settings">site settings</a>
+    <a href="#" class="add_image" title="Add Image">image</a>
+    <a href="#" class="add_para" title="Add Paragraph">paragraph</a>
+    <a href="#" class="add_link" title="Add Link">link</a>
+    <a href="#" class="add_video" title="Add Video">Video</a>
+    <a href="#" class="add_other" title="More Options">more</a>
+    <a href="#" class="site_export" title="Export HTML">export</a>
 
   </div>
 
-  <div class="main_container">
 
-      <div class="email">   
-      
+
+  <div class="main_container">
+      <div class="email">  
+
       <!-- begin email table structure -->
       <table cellpadding="0" cellspacing="0" border="0" id="backgroundTable">
         <tr>
@@ -51,49 +51,87 @@
   
             <!-- PRE HEADER -->
             <table class="table_preheader" style="width:100%;">
-              <!-- <tr class="options" style="backgrounnd: yellow;">
-                <td>
-                  <a class="_add" href="#">ADD</a>
-                  <a class="_edit" href="#">EDIT</a>
-                  <a class="_options" href="#">OPTIONS</a>
+              <!-- container for the table options -->
+              <tr class="option-row">
+                <td class="option-cell" colspan="2" >
+                  <div class="options structure">
+                    <div>
+                      <a class="_edit" title="Edit Content" href="#">EDIT</a>
+                      <a class="_options" title="Content Options"href="#">OPTIONS</a>
+                    </div>
                 </td>
-              </tr> -->
+              </tr>
               <tr>
                 <td style="text-align: left;">Preview Text</td>
                 <td style="text-align: right;">View as a webpage</td> 
               </tr>
             </table>
 
+
+
             <!-- HEADER -->
             <table class="table_header" style="width:100%; ">
-              <!-- <tr class="options" style="backgrounnd: cyan;">
-                <td>
-                  <a class="_add" href="#">ADD</a>
-                  <a class="_edit" href="#">EDIT</a>
-                  <a class="_options" href="#">OPTIONS</a>
+              <tr class="option-row">
+                <td class="option-cell">
+                  <div class="options structure">
+                    <div>
+                      <a class="_add" title="Add Structure" href="#">ADD</a>
+                      <a class="_edit" title="Edit Structure" href="#">EDIT</a>
+                      <a class="_options" title="Structure Options"href="#">OPTIONS</a>
+                    </div>
                 </td>
-              </tr> -->
+              </tr>
+              
               <tr>
                 <td style="text-align: center; vertical-align: middle;">HEADER</td>
               </tr>
             </table>
 
              <!-- body these are the tables we will be multiplying / manipulating -->
-            <table class="table_content" style="width:100%; background: #3b424c;">
+            <table class="table_content" style="width:100%;">
+              <tr class="option-row">
+                <td class="option-cell">
+                  <div class="options structure">
+                    <div>
+                      <a class="_add" title="Add Structure" href="#">ADD</a>
+                      <a class="_edit" title="Edit Structure" href="#">EDIT</a>
+                      <a class="_options" title="Structure Options"href="#">OPTIONS</a>
+                    </div>
+                </td>
+              </tr>
               <tr>
                 <td style="text-align: center; vertical-align: middle;">BODY</td>
               </tr>
             </table>
 
             <!-- FOOTER -->
-            <table class="table_footer" style="width:100%; background: #606b7c;">
+            <table class="table_footer" style="width:100%;">
+              <tr class="option-row">
+                <td class="option-cell">
+                  <div class="options structure">
+                    <div>
+                      <a class="_add" title="Add Structure" href="#">ADD</a>
+                      <a class="_edit" title="Edit Structure" href="#">EDIT</a>
+                      <a class="_options" title="Structure Options"href="#">OPTIONS</a>
+                    </div>
+                </td>
+              </tr>
               <tr>
                 <td style="text-align: center; vertical-align: middle;">FOOTER</td>
               </tr>
             </table>
 
-            <!-- POST HEADER -->
+            <!-- POST FOOTER -->
             <table class="table_postfooter" style="width:100%;">
+              <tr class="option-row">
+                <td class="option-cell">
+                  <div class="options structure">
+                    <div>
+                      <a class="_edit" title="Edit Structure" href="#">EDIT</a>
+                      <a class="_options" title="Structure Options"href="#">OPTIONS</a>
+                    </div>
+                </td>
+              </tr>
               <tr>
                 <td style="text-align: center;">Unsubscribe</td>
               </tr>
