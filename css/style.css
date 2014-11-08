@@ -1218,10 +1218,15 @@ textarea {
   background: red; }
 
 body, html {
-  height: 100%; }
+  height: 100%;
+  margin: 0;
+  padding: 0; }
 
 body {
+  background: #2c3239;
   font-size: 12px; }
+  body.editor {
+    background: none; }
 
 header.blank {
   background: #16181c;
@@ -1370,9 +1375,6 @@ header.blank {
 .email {
   position: relative;
   margin: 0 auto;
-  margin-top: 20px;
-  width: 600px;
-  border: 1px solid #CFD3D9;
   color: #222; }
   .email tr {
     position: relative; }
@@ -1383,15 +1385,14 @@ header.blank {
   .table_header tr, .table_footer tr, .table_preheader tr, .table_postfooter tr {
     position: relative; }
 
-.table_content {
+.table_nostructure {
   min-height: 200px; }
 
-.table_header, .table_footer, .table_preheader, .table_postfooter, .table_content {
-  position: relative;
-  border: 1px solid transparent; }
-  .table_header:hover, .table_footer:hover, .table_preheader:hover, .table_postfooter:hover, .table_content:hover {
+.table_header, .table_footer, .table_preheader, .table_postfooter, .table_nostructure {
+  position: relative; }
+  .table_header:hover, .table_footer:hover, .table_preheader:hover, .table_postfooter:hover, .table_nostructure:hover {
     border: 1px solid #3CA2B9; }
-    .table_header:hover .options, .table_footer:hover .options, .table_preheader:hover .options, .table_postfooter:hover .options, .table_content:hover .options {
+    .table_header:hover .options, .table_footer:hover .options, .table_preheader:hover .options, .table_postfooter:hover .options, .table_nostructure:hover .options {
       display: block; }
 
 .option-cell {
@@ -1407,17 +1408,22 @@ header.blank {
   right: -1px;
   width: 67px;
   height: 20px; }
+  .options.editing {
+    width: 44px; }
 
-.structure a {
+.structure a, .editing a {
   display: inline-block;
   width: 20px;
   height: 20px;
   text-indent: -9999px; }
-.structure ._add {
+
+._add {
   background: #3C9EC1 url(/images/full/icon_edit_transparent.png) 0 0 no-repeat; }
-.structure ._edit {
+
+._edit {
   background: #3C9EC1 url(/images/full/icon_edit_transparent.png) 0 0 no-repeat; }
-.structure ._options {
+
+._options {
   background: #3C9EC1 url(/images/full/icon_options_transparent.png) 0 0 no-repeat; }
 
 .table_preheader, .table_postfooter {
@@ -1427,5 +1433,12 @@ header.blank {
 
 .email table:nth-child(even) {
   background: #cfd3d9; }
+
+.table_structured .item {
+  position: relative; }
+  .table_structured .item:hover {
+    border: 1px solid red; }
+    .table_structured .item:hover .editing {
+      display: block; }
 
 /*# sourceMappingURL=style.css.map */

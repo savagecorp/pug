@@ -1,0 +1,364 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>codename pug</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/boilerplate.css">
+
+</head>
+<body class="editor">
+<div class="content_wrap">
+
+<!--   <div class="tools">
+    <a href="#" class="site_settings" title="Site Settings">site settings</a>
+    <a href="#" class="add_image" title="Add Image">image</a>
+    <a href="#" class="add_para" title="Add Paragraph">paragraph</a>
+    <a href="#" class="add_link" title="Add Link">link</a>
+    <a href="#" class="add_video" title="Add Video">Video</a>
+    <a href="#" class="add_other" title="More Options">more</a>
+    <a href="#" class="site_export" title="Export HTML">export</a>
+
+  </div> -->
+
+<!-- NOTES & ITEMS TO TEST -->
+<!-- There's a question of semtanics, is it better to use all DIVs vs P & H1 etc... -->
+<!-- TR has no stylyes -->
+<!-- TD has padding -->
+<!-- Other elements (p / h1) use margin -->
+
+  <div class="main_container">
+      <div class="email">  
+
+      <!-- begin email table structure -->
+      <table cellpadding="0" cellspacing="0" border="0" id="backgroundTable">
+        <tr>
+          <td valign="top"> 
+            <!-- begin content -->
+  
+            <!-- PRE HEADER -->
+            <table class="table_preheader" style="width:600px; margin: 0 auto;">
+              <!-- container for the table options -->
+              <tr class="option-row">
+                <td class="option-cell" colspan="2" >
+                  <div class="options structure">
+                      <a class="_edit" title="Edit Content" href="#">EDIT</a>
+                      <a class="_options" title="Content Options"href="#">OPTIONS</a>
+                    </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="text-align: left;">Preview Text</td>
+                <td style="text-align: right;">View as a webpage</td> 
+              </tr>
+            </table>
+
+
+
+            <!-- HEADER -->
+            <table class="table_header" style="width:600px; margin: 0 auto;">
+              <tr class="option-row">
+                <td class="option-cell">
+                  <div class="options structure">
+                      <a class="_add" title="Add Structure" href="#">ADD</a>
+                      <a class="_edit" title="Edit Structure" href="#">EDIT</a>
+                      <a class="_options" title="Structure Options"href="#">OPTIONS</a>
+                  </div>
+                </td>
+              </tr>
+              
+              <tr>
+                <td style="text-align: center; vertical-align: middle;">HEADER</td>
+              </tr>
+            </table>
+
+            <!-- Full Width Table & Content -->
+            <table class="table_nostructure one_col_even" cellpadding="0" cellspacing="0" border="0" style="width:600px; margin: 0 auto;">
+              <tr class="option-row">
+                <td class="option-cell">
+                  <div class="options structure">
+                    <a class="_add" title="Add Structure" href="#">ADD</a>
+                    <a class="_edit" title="Edit Structure" href="#">EDIT</a>
+                    <a class="_options" title="Structure Options"href="#">OPTIONS</a>
+                  </div>
+                </td>
+              </tr>
+              <tr style="text-align: left; line-height: 20px;">
+                <td style="text-align: center; vertical-align: middle;">THIS TABLE HAS NO STRUCTURE, SO THE OPTIONS ARE T0 ADD STRUCTURE. ADD/ EDIT (?) / OPTIONS (the question is how to work this in once the table has structure)</td>
+              </tr>
+            </table>
+
+            <!-- This has a wrapping table applied -->
+            
+            <table class="" cellpadding="0" cellspacing="0" border="0" style="width:100%; background:gold; text-align: left; line-height: 20px;">
+              <tr>
+                <td>
+                  <table class="table_structured one_col_even" cellpadding="0" cellspacing="0" border="0" style="width:600px; margin: 0 auto; text-align: left; line-height: 20px;">
+                    <tr>
+                      <td>
+                        <div class="item">
+                          <div class="options editing">
+                            <a class="_edit" title="Edit Structure" href="#">EDIT</a>
+                            <a class="_options" title="Structure Options"href="#">OPTIONS</a>
+                          </div>
+                          <img src="#" alt="Im an image" placeholder="hello" style="width:100%; height: 200px; background: #666;">
+                        </div>
+                        <div class="item">
+                          <div class="options editing">
+                            <a class="_edit" title="Edit Structure" href="#">EDIT</a>
+                            <a class="_options" title="Structure Options"href="#">OPTIONS</a>
+                          </div>
+                          <h1>This table has structure</h1>
+                        </div>
+                        <div class="item">
+                          <div class="options editing">
+                            <a class="_edit" title="Edit Structure" href="#">EDIT</a>
+                            <a class="_options" title="Structure Options"href="#">OPTIONS</a>
+                          </div>
+                          <p>So these options apply the elements. There should also be a tools panel allowing the user to add more and different types of conent. Maybe the table options are in here.. like deleting certain aspects of the table structure? ... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore cum ab atque, quibusdam at earum quasi debitis, nihil officia vel quos sequi excepturi voluptatum nam provident iusto. Numquam, fugiat porro!
+                          </p>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+
+                </td>
+              </tr>
+            </table>
+
+            <!-- Full Width Table & Content -->
+            <table class="table_nostructure one_col_even" cellpadding="0" cellspacing="0" border="0" style="width:600px; margin: 0 auto;">
+              <tr class="option-row">
+                <td class="option-cell">
+                  <div class="options structure">
+                    <a class="_add" title="Add Structure" href="#">ADD</a>
+                    <a class="_edit" title="Edit Structure" href="#">EDIT</a>
+                    <a class="_options" title="Structure Options"href="#">OPTIONS</a>
+                  </div>
+                </td>
+              </tr>
+              <tr style="text-align: left; line-height: 20px;">
+                <td>
+                  <img src="#" alt="hello" placeholder="hello" style="width:100%; height: 200px; background: #666;" >
+                  <h1>Lorem ipsum dolor sit</h1>
+                  <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore cum ab atque, quibusdam at earum quasi debitis, nihil officia vel quos sequi excepturi voluptatum nam provident iusto. Numquam, fugiat porro!</p>
+                </td>
+              </tr>
+            </table>
+
+            <!-- Full Width Table / Headline / Image / Content -->
+            <table class="table_nostructure one_col_even" cellpadding="0" cellspacing="0" border="0" style="width:600px; margin: 0 auto;">
+              <tr class="option-row">
+                <td class="option-cell">
+                  <div class="options structure">
+                    <a class="_add" title="Add Structure" href="#">ADD</a>
+                    <a class="_edit" title="Edit Structure" href="#">EDIT</a>
+                    <a class="_options" title="Structure Options"href="#">OPTIONS</a>
+                  </div>
+                </td>
+              </tr>
+              <tr style="text-align: left; line-height: 20px;">
+                <td>
+                  <h1>Lorem ipsum dolor sit </h1>
+                  <img src="#" alt="hello" placeholder="hello" style="width:100%; height: 200px; background: #666;" >
+                  <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore cum ab atque, quibusdam at earum quasi debitis, nihil officia vel quos sequi excepturi voluptatum nam provident iusto. Numquam, fugiat porro!</p>
+                </td>
+              </tr>
+            </table>
+
+            <!-- TWO COLUMN EVEN SPLIT -->
+            <table class="table_nostructure two_col_even" cellpadding="0" cellspacing="0" border="0" style="width:600px; margin: 0 auto;">
+              <tr class="option-row">
+                <td colspan="2" class="option-cell">
+                  <div class="options structure">
+                    <a class="_add" title="Add Structure" href="#">ADD</a>
+                    <a class="_edit" title="Edit Structure" href="#">EDIT</a>
+                    <a class="_options" title="Structure Options"href="#">OPTIONS</a>
+                  </div>
+                </td>
+              </tr>
+              <tr style="text-align: left; line-height: 20px;">
+                <td>
+                  <img src="#" alt="hello" placeholder="hello" style="width:100%; height: 200px; background: #666;" >
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore cum ab atque, quibusdam at earum quasi debitis, nihil officia vel quos sequi excepturi voluptatum nam provident iusto. Numquam, fugiat porro!</p>
+                </td>
+                <td>
+                  <img src="#" alt="hello" placeholder="hello" style="width:100%; height: 200px; background: #666;" >
+                  <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore cum ab atque, quibusdam at earum quasi debitis, nihil officia vel quos sequi excepturi voluptatum nam provident iusto. Numquam, fugiat porro!</p>
+                </td>
+              </tr>
+            </table>
+
+            <!-- THREE COLUMN EVEN SPLIT -->
+            <table class="table_nostructure three_col_even" cellpadding="0" cellspacing="0" border="0" style="width:600px; margin: 0 auto;">
+              <tr class="option-row">
+                <td colspan="3" class="option-cell">
+                  <div class="options structure">
+                    <a class="_add" title="Add Structure" href="#">ADD</a>
+                    <a class="_edit" title="Edit Structure" href="#">EDIT</a>
+                    <a class="_options" title="Structure Options"href="#">OPTIONS</a>
+                  </div>
+                </td>
+              </tr>
+              <tr style="text-align: left; line-height: 20px;">
+                <td>
+                  <img src="#" alt="hello" placeholder="hello" style="width:100%; height: 200px; background: #666;" >
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore cum ab atque, quibusdam at earum quasi debitis, nihil officia vel quos sequi excepturi voluptatum nam provident iusto. Numquam, fugiat porro!</p>
+                </td>
+                <td>
+                  <img src="#" alt="hello" placeholder="hello" style="width:100%; height: 200px; background: #666;" >
+                  <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore cum ab atque, quibusdam at earum quasi debitis, nihil officia vel quos sequi excepturi voluptatum nam provident iusto. Numquam, fugiat porro!</p>
+                </td>
+                <td>
+                  <img src="#" alt="hello" placeholder="hello" style="width:100%; height: 200px; background: #666;" >
+                  <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore cum ab atque, quibusdam at earum quasi debitis, nihil officia vel quos sequi excepturi voluptatum nam provident iusto. Numquam, fugiat porro!</p>
+                </td>
+              </tr>
+            </table>
+
+            <!-- TWO COLUMN EVEN SPLIT -->
+            <table class="table_nostructure seventy_thirty_split" cellpadding="0" cellspacing="0" border="0" style="width:600px; margin: 0 auto;">
+              <tr class="option-row">
+                <td colspan="2" class="option-cell">
+                  <div class="options structure">
+                    <a class="_add" title="Add Structure" href="#">ADD</a>
+                    <a class="_edit" title="Edit Structure" href="#">EDIT</a>
+                    <a class="_options" title="Structure Options"href="#">OPTIONS</a>
+                  </div>
+                </td>
+              </tr>
+              <tr style="text-align: left; line-height: 20px;">
+                <td style="width: 66.66%;">
+                  <img src="#" alt="hello" placeholder="hello" style="width:100%; height: 200px; background: #666;" >
+                  <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore cum ab atque, quibusdam at earum quasi debitis, nihil officia vel quos sequi excepturi voluptatum nam provident iusto. Numquam, fugiat porro!</p>
+                </td>
+                <td style="width: 33.33%;">
+                  <img src="#" alt="hello" placeholder="hello" style="width:100%; height: 200px; background: #666;" >
+                  <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore cum ab atque, quibusdam at earum quasi debitis, nihil officia vel quos sequi excepturi voluptatum nam provident iusto. Numquam, fugiat porro!</p>
+                </td>
+              </tr>
+            </table>
+
+            <!-- TWO COLUMN EVEN SPLIT -->
+            <table class="table_nostructure seventy_thirty_split" cellpadding="0" cellspacing="0" border="0" style="width:600px; margin: 0 auto;">
+              <tr class="option-row">
+                <td colspan="2" class="option-cell">
+                  <div class="options structure">
+                    <a class="_add" title="Add Structure" href="#">ADD</a>
+                    <a class="_edit" title="Edit Structure" href="#">EDIT</a>
+                    <a class="_options" title="Structure Options"href="#">OPTIONS</a>
+                  </div>
+                </td>
+              </tr>
+              <tr style="text-align: left; line-height: 20px;">
+                <td style="width: 33.33%;">
+                  <img src="#" alt="hello" placeholder="hello" style="width:100%; height: 200px; background: #666;" >
+                  <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore cum ab atque, quibusdam at earum quasi debitis, nihil officia vel quos sequi excepturi voluptatum nam provident iusto. Numquam, fugiat porro!</p>
+                </td>
+                <td style="width: 66.66%;">
+                  <img src="#" alt="hello" placeholder="hello" style="width:100%; height: 200px; background: #666;" >
+                  <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore cum ab atque, quibusdam at earum quasi debitis, nihil officia vel quos sequi excepturi voluptatum nam provident iusto. Numquam, fugiat porro!</p>
+                </td>
+              </tr>
+            </table>
+
+             <!-- Full Width Table & Content -->
+            <table class="table_nostructure one_col_even" cellpadding="0" cellspacing="0" border="0" style="width:600px; margin: 0 auto;">
+              <tr class="option-row">
+                <td class="option-cell">
+                  <div class="options structure">
+                    <a class="_add" title="Add Structure" href="#">ADD</a>
+                    <a class="_edit" title="Edit Structure" href="#">EDIT</a>
+                    <a class="_options" title="Structure Options"href="#">OPTIONS</a>
+                  </div>
+                </td>
+              </tr>
+              <tr style="text-align: left; line-height: 20px;">
+                <td>
+                  <h1>Lorem ipsum dolor sit</h1>
+                  <h2>Lorem ipsum dolor sit</h2>
+                  <h3>Lorem ipsum dolor sit</h3>
+                  <h4>Lorem ipsum dolor sit</h4>
+                  <h5>Lorem ipsum dolor sit</h5>
+                  <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore cum ab atque, quibusdam at earum quasi debitis, nihil officia vel quos sequi excepturi voluptatum nam provident iusto. Numquam, fugiat porro!</p>
+                </td>
+              </tr>
+            </table>
+
+            <!-- THREE COLUMN EVEN SPLIT w/PADDING -->
+            <table class="table_nostructure three_col_even" cellpadding="0" cellspacing="0" border="0" style="width:600px; margin: 0 auto; text-align: left; line-height: 20px;">
+              <tr class="option-row">
+                <td colspan="3" class="option-cell">
+                  <div class="options structure">
+                    <a class="_add" title="Add Structure" href="#">ADD</a>
+                    <a class="_edit" title="Edit Structure" href="#">EDIT</a>
+                    <a class="_options" title="Structure Options"href="#">OPTIONS</a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding: 10px;">
+                  <img src="#" alt="hello" placeholder="hello" style="width:100%; height: 200px; background: #666;" >
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore cum ab atque, quibusdam at earum quasi debitis, nihil officia vel quos sequi excepturi voluptatum nam provident iusto. Numquam, fugiat porro!</p>
+                </td>
+                <td style="padding: 10px;">
+                  <img src="#" alt="hello" placeholder="hello" style="width:100%; height: 200px; background: #666;" >
+                  <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore cum ab atque, quibusdam at earum quasi debitis, nihil officia vel quos sequi excepturi voluptatum nam provident iusto. Numquam, fugiat porro!</p>
+                </td>
+                <td style="padding: 10px;">
+                  <img src="#" alt="hello" placeholder="hello" style="width:100%; height: 200px; background: #666;" >
+                  <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore cum ab atque, quibusdam at earum quasi debitis, nihil officia vel quos sequi excepturi voluptatum nam provident iusto. Numquam, fugiat porro!</p>
+                </td>
+              </tr>
+            </table>
+
+
+            <!-- FOOTER -->
+            <table class="table_footer" style="width:600px; margin: 0 auto;">
+              <tr class="option-row">
+                <td class="option-cell">
+                  <div class="options structure">
+                    <a class="_add" title="Add Structure" href="#">ADD</a>
+                    <a class="_edit" title="Edit Structure" href="#">EDIT</a>
+                    <a class="_options" title="Structure Options"href="#">OPTIONS</a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="text-align: center; vertical-align: middle;">FOOTER</td>
+              </tr>
+            </table>
+
+            <!-- POST FOOTER -->
+            <table class="table_postfooter" style="width:600px; margin: 0 auto;">
+              <tr class="option-row">
+                <td class="option-cell">
+                  <div class="options structure">
+                    <a class="_edit" title="Edit Structure" href="#">EDIT</a>
+                    <a class="_options" title="Structure Options"href="#">OPTIONS</a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="text-align: center;">Unsubscribe</td>
+              </tr>
+            </table>
+
+          <!-- END CONTENT -->
+          </td>
+        </tr>
+      </table>
+      <!-- END WRAPPING TABLE -->
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+</body>
+</html>

@@ -2,11 +2,12 @@
 @import 'reset';
 @import 'mixins';
 
-body, html {height: 100%;}
+body, html {height: 100%; margin: 0; padding: 0;}
 
 body {
-  // background: #4A525F; 
+  background: #2c3239; 
   font-size: 12px;
+  &.editor {background: none;}
 }
 
 
@@ -152,9 +153,9 @@ header {
 .email {
   position: relative;
   margin: 0 auto;
-  margin-top:20px;
-  width: 600px;
-  border: 1px solid #CFD3D9; // border wrapping email
+  // margin-top:20px;
+  // width: 600px;
+  // border: 1px solid #CFD3D9; // border wrapping email
   color: #222;
   tr {position: relative;}
 }
@@ -170,12 +171,12 @@ header {
   tr {position: relative;}
 }
 
-.table_content {min-height: 200px;}
+.table_nostructure {min-height: 200px;}
 
 
-.table_header, .table_footer, .table_preheader, .table_postfooter, .table_content {
+.table_header, .table_footer, .table_preheader, .table_postfooter, .table_nostructure {
   position: relative;
-  border: 1px solid transparent;
+  // border: 1px solid transparent;
   &:hover {
     border: 1px solid #3CA2B9;
     .options {
@@ -198,9 +199,10 @@ header {
   right: -1px;
   width: 67px; 
   height: 20px; 
+  &.editing {width: 44px;}
 }
 
-.structure {
+.structure, .editing {
   a {
     display: inline-block;
     width: 20px;
@@ -208,10 +210,11 @@ header {
     text-indent: -9999px;
 
   }
-  ._add     {background: #3C9EC1 url(/images/full/icon_edit_transparent.png) 0 0 no-repeat;}
-  ._edit    {background: #3C9EC1 url(/images/full/icon_edit_transparent.png) 0 0 no-repeat;}
-  ._options {background: #3C9EC1 url(/images/full/icon_options_transparent.png) 0 0 no-repeat;}
 }
+
+._add     {background: #3C9EC1 url(/images/full/icon_edit_transparent.png) 0 0 no-repeat;}
+._edit    {background: #3C9EC1 url(/images/full/icon_edit_transparent.png) 0 0 no-repeat;}
+._options {background: #3C9EC1 url(/images/full/icon_options_transparent.png) 0 0 no-repeat;}
 
 .table_preheader, .table_postfooter{
   min-height: 40px;
@@ -223,6 +226,17 @@ header {
 }
 
 
+// Individual Item Options
+
+.table_structured {
+  .item {
+    position: relative;
+    &:hover {
+      border: 1px solid red;
+      .editing {display: block;}
+    }
+  }
+}
 
 
 

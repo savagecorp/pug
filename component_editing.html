@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>codename pug</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/boilerplate.css">
+
+</head>
+<body class="editor">
+<div class="content_wrap">
+
+<!--   <div class="tools">
+    <a href="#" class="site_settings" title="Site Settings">site settings</a>
+    <a href="#" class="add_image" title="Add Image">image</a>
+    <a href="#" class="add_para" title="Add Paragraph">paragraph</a>
+    <a href="#" class="add_link" title="Add Link">link</a>
+    <a href="#" class="add_video" title="Add Video">Video</a>
+    <a href="#" class="add_other" title="More Options">more</a>
+    <a href="#" class="site_export" title="Export HTML">export</a>
+
+  </div> -->
+
+<!-- NOTES & ITEMS TO TEST -->
+<!-- There's a question of semtanics, is it better to use all DIVs vs P & H1 etc... -->
+<!-- TR has no stylyes -->
+<!-- TD has padding -->
+<!-- Other elements (p / h1) use margin -->
+
+  <div class="main_container">
+      <div class="email" >  
+
+      <!-- begin email table structure -->
+      <table cellpadding="0" cellspacing="0" border="0" id="backgroundTable">
+        <tr>
+          <td valign="top"> 
+            <!-- begin content -->
+
+            <!-- Full Width Table & Content -->
+
+            <!-- Changing the table class from .table_contents to .table_components for a table that has items inside. May need to change blank tables to have a class of .table_nostructure for blank tables, and .table_structured for those with components -->
+            <table class="table_structured one_col_even" cellpadding="0" cellspacing="0" border="0" style="width:100%; text-align: left; line-height: 20px;">
+              <tr>
+                <td>
+                  <div class="item">
+                    <div class="options editing">
+                      <a class="_edit" title="Edit Structure" href="#">EDIT</a>
+                      <a class="_options" title="Structure Options"href="#">OPTIONS</a>
+                    </div>
+                    <img src="#" alt="hello" placeholder="hello" style="width:100%; height: 200px; background: #666;">
+                  </div>
+                  <div class="item">
+                    <div class="options editing">
+                      <a class="_edit" title="Edit Structure" href="#">EDIT</a>
+                      <a class="_options" title="Structure Options"href="#">OPTIONS</a>
+                    </div>
+                    <h1>Lorem ipsum dolor sit</h1>
+                  </div>
+                  <div class="item">
+                    <div class="options editing">
+                      <a class="_edit" title="Edit Structure" href="#">EDIT</a>
+                      <a class="_options" title="Structure Options"href="#">OPTIONS</a>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore cum ab atque, quibusdam at earum quasi debitis, nihil officia vel quos sequi excepturi voluptatum nam provident iusto. Numquam, fugiat porro!
+                    </p>
+                  </div>
+                </td>
+              </tr>
+            </table>
+
+
+          <!-- END CONTENT -->
+          </td>
+        </tr>
+      </table>
+      <!-- END WRAPPING TABLE -->
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+</body>
+</html>
