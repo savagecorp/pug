@@ -197,18 +197,23 @@ html {
 @-webkit-viewport {
   width: device-width;
   zoom: 1.0; }
+
 @-moz-viewport {
   width: device-width;
   zoom: 1.0; }
+
 @-ms-viewport {
   width: device-width;
   zoom: 1.0; }
+
 @-o-viewport {
   width: device-width;
   zoom: 1.0; }
+
 @viewport {
   width: device-width;
   zoom: 1.0; }
+
 /**
  * Box model adjustments
  * `border-box`... ALL THE THINGS - http://cbrac.co/RQrDL5
@@ -1065,6 +1070,7 @@ select:focus {
   select {
     max-height: 40px;
     height: auto; } }
+
 /**
  * 1. Restrict <textarea> elements to vertical resizing only
  */
@@ -1171,6 +1177,7 @@ textarea {
 
   @page {
     margin: 0.5cm; }
+
   a,
   a:visited {
     text-decoration: underline; }
@@ -1273,21 +1280,35 @@ header.blank {
     display: inline-block;
     vertical-align: middle; }
 
-.project {
+.button {
   display: inline-block;
-  background: #16181c;
-  padding: 25px;
-  text-align: center;
-  box-shadow: inset 0 1px 0 0 #4a525f;
   border: 1px solid #070809;
   color: #f5f6f7;
+  background: #16181c;
+  text-align: center;
+  box-shadow: inset 0 1px 0 0 #4a525f;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease; }
-  .project:hover {
-    background: #3CA2B9; }
+  .button:hover {
+    background-color: #3CA2B9; }
+
+.project {
+  padding: 25px; }
+
+.tooltype {
+  padding: 10px;
+  height: 31px;
+  width: 30px;
+  color: #fff;
+  text-indent: -9999px; }
+  .tooltype:hover {
+    color: #3CA2B9;
+    -moz-box-shadow: 0 0 5px #3CA2B9;
+    -webkit-box-shadow: 0 0 5px #3CA2B9;
+    box-shadow: 0px 0px 5px #3CA2B9; }
 
 .content_wrap {
   min-width: 800px;
@@ -1328,23 +1349,6 @@ header.blank {
   text-align: center;
   background: #1D1F25;
   border-top: 1px solid #2c3139; }
-  .tools a {
-    display: inline-block;
-    padding: 10px;
-    height: 31px;
-    width: 30px;
-    color: #fff;
-    text-indent: -9999px;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease; }
-    .tools a:hover {
-      color: #3CA2B9;
-      -moz-box-shadow: 0 0 5px #3CA2B9;
-      -webkit-box-shadow: 0 0 5px #3CA2B9;
-      box-shadow: 0px 0px 5px #3CA2B9; }
 
 .site_settings {
   background: url(/images/full/icon_settings.png) 0 0 no-repeat;
@@ -1418,13 +1422,13 @@ header.blank {
   text-indent: -9999px; }
 
 ._add {
-  background: #3C9EC1 url(/images/full/icon_edit_transparent.png) 0 0 no-repeat; }
+  background: #3c9ec1 url(/images/full/icon_edit_transparent.png) 0 0 no-repeat; }
 
 ._edit {
-  background: #3C9EC1 url(/images/full/icon_edit_transparent.png) 0 0 no-repeat; }
+  background: #3c9ec1 url(/images/full/icon_edit_transparent.png) 0 0 no-repeat; }
 
 ._options {
-  background: #3C9EC1 url(/images/full/icon_options_transparent.png) 0 0 no-repeat; }
+  background: #3c9ec1 url(/images/full/icon_options_transparent.png) 0 0 no-repeat; }
 
 .table_preheader, .table_postfooter {
   min-height: 40px; }
@@ -1440,5 +1444,3 @@ header.blank {
     border: 1px solid red; }
     .table_structured .item:hover .editing {
       display: block; }
-
-/*# sourceMappingURL=style.css.map */
