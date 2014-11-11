@@ -197,23 +197,18 @@ html {
 @-webkit-viewport {
   width: device-width;
   zoom: 1.0; }
-
 @-moz-viewport {
   width: device-width;
   zoom: 1.0; }
-
 @-ms-viewport {
   width: device-width;
   zoom: 1.0; }
-
 @-o-viewport {
   width: device-width;
   zoom: 1.0; }
-
 @viewport {
   width: device-width;
   zoom: 1.0; }
-
 /**
  * Box model adjustments
  * `border-box`... ALL THE THINGS - http://cbrac.co/RQrDL5
@@ -1070,7 +1065,6 @@ select:focus {
   select {
     max-height: 40px;
     height: auto; } }
-
 /**
  * 1. Restrict <textarea> elements to vertical resizing only
  */
@@ -1177,7 +1171,6 @@ textarea {
 
   @page {
     margin: 0.5cm; }
-
   a,
   a:visited {
     text-decoration: underline; }
@@ -1330,17 +1323,16 @@ header.blank {
   right: 0; }
 
 .main_container {
+  position: relative;
+  z-index: 1;
+  top: 0;
   width: 100%;
   min-width: 640px;
   height: 100%;
-  text-align: center;
-  float: left;
-  z-index: 1;
-  top: 0;
-  position: relative; }
+  text-align: center; }
 
 .tools {
-  position: absolute;
+  position: fixed;
   z-index: 200;
   height: 60px;
   padding-top: 10px;
@@ -1379,6 +1371,7 @@ header.blank {
 .email {
   position: relative;
   margin: 0 auto;
+  padding-bottom: 100px;
   color: #222; }
   .email tr {
     position: relative; }
@@ -1422,13 +1415,13 @@ header.blank {
   text-indent: -9999px; }
 
 ._add {
-  background: #3c9ec1 url(/images/full/icon_edit_transparent.png) 0 0 no-repeat; }
+  background: #3C9EC1 url(/images/full/icon_edit_transparent.png) 0 0 no-repeat; }
 
 ._edit {
-  background: #3c9ec1 url(/images/full/icon_edit_transparent.png) 0 0 no-repeat; }
+  background: #3C9EC1 url(/images/full/icon_edit_transparent.png) 0 0 no-repeat; }
 
 ._options {
-  background: #3c9ec1 url(/images/full/icon_options_transparent.png) 0 0 no-repeat; }
+  background: #3C9EC1 url(/images/full/icon_options_transparent.png) 0 0 no-repeat; }
 
 .table_preheader, .table_postfooter {
   min-height: 40px; }
@@ -1444,3 +1437,5 @@ header.blank {
     border: 1px solid red; }
     .table_structured .item:hover .editing {
       display: block; }
+
+/*# sourceMappingURL=style.css.map */

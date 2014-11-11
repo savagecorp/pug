@@ -117,19 +117,19 @@ header {
 }
 
 .main_container {
+  position: relative;
+    // float: left;
+  z-index: 1;
+  top: 0;
   width: 100%;
   min-width: 640px;
   height: 100%;
   text-align: center;
-  float: left;
-  z-index: 1;
-  top: 0;
-  position: relative;
 }
 
 
 .tools {
-  position: absolute;
+  position: fixed;
   z-index: 200;
   height: 60px;
   padding-top: 10px;
@@ -154,6 +154,7 @@ header {
 .email {
   position: relative;
   margin: 0 auto;
+  padding-bottom: 100px;
   // margin-top:20px;
   // width: 600px;
   // border: 1px solid #CFD3D9; // border wrapping email
