@@ -140,15 +140,23 @@ header {
   border-top: 1px solid #2c3139;
 }
 
-.site_settings   { background: url(/images/full/icon_settings.png) 0 0 no-repeat; margin-right: 6em; }
-.add_image      { background: url(/images/full/icon_image.png) 0 0 no-repeat; }
-.add_para       { background: url(/images/full/icon_para.png) 0 0 no-repeat; }
-.add_link       { background: url(/images/full/icon_link.png) 0 0 no-repeat; }
-.add_button       { background: url(/images/full/icon_button.png) 0 0 no-repeat; }
-// .add_separater  { background: url(/images/full/icon_separater.png) 0 0 no-repeat; }
-.add_video      { background: url(/images/full/icon_video.png) 0 0 no-repeat; }
-.add_other      { background: url(/images/full/icon_others.png) 0 0 no-repeat; }
-.site_export    { background: url(/images/full/icon_export.png) 0 0 no-repeat;margin-left: 6em; }
+.site_settings  { background: #16181c url(/images/full/icon_settings_transparent.png) 0 0 no-repeat; margin-right: 6em; }
+.add_h1         { background: #16181c url(/images/full/icon_h1_transparent.png) 0 0 no-repeat; }
+.add_h2         { background: #16181c url(/images/full/icon_h2_transparent.png) 0 0 no-repeat; }
+.add_h3         { background: #16181c url(/images/full/icon_h3_transparent.png) 0 0 no-repeat; }
+.add_h4         { background: #16181c url(/images/full/icon_h4_transparent.png) 0 0 no-repeat; }
+.add_h5         { background: #16181c url(/images/full/icon_h5_transparent.png) 0 0 no-repeat; }
+.add_image      { background: #16181c url(/images/full/icon_image_transparent.png) 0 0 no-repeat; }
+.add_para       { background: #16181c url(/images/full/icon_paragraph_transparent.png) 0 0 no-repeat; }
+.add_link       { background: #16181c url(/images/full/icon_link_transparent.png) 0 0 no-repeat; }
+.add_button     { background: #16181c url(/images/full/icon_button_transparent.png) 0 0 no-repeat; }
+.add_separater  { background: #16181c url(/images/full/icon_hr_transparent.png) 0 0 no-repeat; }
+.add_video      { background: #16181c url(/images/full/icon_video_transparent.png) 0 0 no-repeat; }
+.add_other      { background: #16181c url(/images/full/icon_more_transparent.png) 0 0 no-repeat; }
+.add_ul         { background: #16181c url(/images/full/icon_ul_transparent.png) 0 0 no-repeat; }
+.add_ol         { background: #16181c url(/images/full/icon_ol_transparent.png) 0 0 no-repeat; }
+.add_anchor     { background: #16181c url(/images/full/icon_anchor_transparent.png) 0 0 no-repeat; }
+.site_export    { background: #16181c url(/images/full/icon_export_transparent.png) 0 0 no-repeat;margin-left: 6em; }
 
 
 .email {
@@ -250,7 +258,7 @@ header {
 
 input, input[type="text"] {
   margin-bottom: 1em;
-  background: #525968;
+  background: #1d2026;
   border: 1px solid #070809;
   letter-spacing: 0.025em;
   font-weight: 300;
@@ -277,7 +285,7 @@ label {
     margin-bottom: 1em;
     overflow: hidden;
     border: 1px solid #070809;
-    background: #525968 url("img/icon-select.png") no-repeat 90% 50%; // Add drop arrow
+    background: #1d2026 url("img/icon-select.png") no-repeat 90% 50%; // Add drop arrow
     @include border-radius(2px);
 }
 
