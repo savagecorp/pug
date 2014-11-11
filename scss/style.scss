@@ -242,6 +242,60 @@ header {
 
 
 
+// Style Guide BAsics
+.styleguide {
+  padding: 4em;
+  p {color: #FFF;}
+}
+
+input, input[type="text"] {
+  margin-bottom: 1em;
+  background: #525968;
+  border: 1px solid #070809;
+  letter-spacing: 0.025em;
+  font-weight: 300;
+  color: #f5f6f7;
+  @include placeholder(#9fa6b4);
+  @include border-radius(2px);
+  @include transition(all .3s ease);  
+  &:focus, &:active {
+    background: #a9afbb;
+    color: #16181c;
+  }
+}
+
+label {
+  display: block;
+  text-align: left;
+  padding: 0 2px 4px 4px;
+  color: #f5f6f7;
+}
+
+
+.select-style {
+    // border: 1px solid #ccc;
+    margin-bottom: 1em;
+    overflow: hidden;
+    border: 1px solid #070809;
+    background: #525968 url("img/icon-select.png") no-repeat 90% 50%; // Add drop arrow
+    @include border-radius(2px);
+}
+
+.select-style select {
+    letter-spacing: 0.025em;
+    font-weight: 300;
+    color: #f5f6f7;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+    &:focus {
+        outline: none;
+    }
+}
+
+
 
 
 

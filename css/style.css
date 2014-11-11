@@ -1054,7 +1054,6 @@ legend {
 
 /* Give <select> menus a different background */
 select {
-  height: 44px;
   background: #f8f8f8; }
 
 select:focus {
@@ -1437,5 +1436,66 @@ header.blank {
     border: 1px solid red; }
     .table_structured .item:hover .editing {
       display: block; }
+
+.styleguide {
+  padding: 4em; }
+  .styleguide p {
+    color: #FFF; }
+
+input, input[type="text"] {
+  margin-bottom: 1em;
+  background: #525968;
+  border: 1px solid #070809;
+  letter-spacing: 0.025em;
+  font-weight: 300;
+  color: #f5f6f7;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  input::-webkit-input-placeholder, input[type="text"]::-webkit-input-placeholder {
+    color: #9fa6b4; }
+  input:-moz-placeholder, input[type="text"]:-moz-placeholder {
+    color: #9fa6b4; }
+  input::-moz-placeholder, input[type="text"]::-moz-placeholder {
+    color: #9fa6b4; }
+  input:-ms-input-placeholder, input[type="text"]:-ms-input-placeholder {
+    color: #9fa6b4; }
+  input:focus, input:active, input[type="text"]:focus, input[type="text"]:active {
+    background: #a9afbb;
+    color: #16181c; }
+
+label {
+  display: block;
+  text-align: left;
+  padding: 0 2px 4px 4px;
+  color: #f5f6f7; }
+
+.select-style {
+  margin-bottom: 1em;
+  overflow: hidden;
+  border: 1px solid #070809;
+  background: #525968 url("img/icon-select.png") no-repeat 90% 50%;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */ }
+
+.select-style select {
+  letter-spacing: 0.025em;
+  font-weight: 300;
+  color: #f5f6f7;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  background-image: none;
+  -webkit-appearance: none; }
+  .select-style select:focus {
+    outline: none; }
 
 /*# sourceMappingURL=style.css.map */

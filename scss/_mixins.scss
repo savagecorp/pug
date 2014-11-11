@@ -186,6 +186,16 @@
   background-clip: padding-box;  /* stops bg color from leaking outside the border: */
 }
 
+
+//   @include placeholder(#ff6600);
+
+@mixin placeholder($color){
+&::-webkit-input-placeholder { color: $color;}
+  &:-moz-placeholder { color: $color;}
+  &::-moz-placeholder { color: $color;}
+  &:-ms-input-placeholder { color: $color;}
+}
+
 // Single side border-radius
 
 @mixin border-top-radius($radius) {
