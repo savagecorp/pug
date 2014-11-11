@@ -13,12 +13,25 @@
 <div class="content_wrap">
   <div class="l_sideboard">
     Site Options
-    <input type="text" placeholder="title">
-    <input type="text" placeholder="table width (fixed)">
-    <input type="text" placeholder="font-family">
-    <input type="text" placeholder="font-size">
-    <input type="text" placeholder="line-height">
-    <input type="text" placeholder="merge tags ?">
+    <form action="">
+        <label for="title">Email Title</label>
+        <input type="text" name="title" placeholder="Title of this Email">
+        <label for="eWidth">Email Width</label>
+        <input type="text" name="eWidth" placeholder="Width (px) <= 600px">
+        <label for="">Font Family</label>
+        <div class="select-style">
+          <select>
+            <option>Helvetica</option>
+            <option value="times">Times New Roman</option>
+            <option value="monoco">Monoco</option>
+            <option value="etc">etc...</option>
+          </select>
+        </div>
+        <label for="">Font Size</label>
+        <input type="text" name="fSize" placeholder="font size (px)" value="12px">
+        <label for="input">Line Height</label>
+        <input type="text" name="input" placeholder="Line Height (px)">
+    </form>
   </div>
   <div class="r_sideboard">
     Content Options <br>
@@ -32,9 +45,6 @@
     <a href="main.html" class="button tooltype add_image">Add Image</a>
     <a href="main.html" class="button tooltype add_para">Add Paragraph</a>
     <a href="main.html" class="button tooltype add_link">Add Link</a>
-    <!-- <a href="main.html" class="button tooltype add_button">Add Button</a> -->
-  <!--   <a href="main.html" class="button tooltype add_separater">Add Separater</a>
-    <a href="main.html" class="button tooltype add_video">Add Video</a> -->
     <a href="main.html" class="button tooltype add_other">Add Other</a>
     <a href="main.html" class="button tooltype site_export">Export</a>
   </div>
