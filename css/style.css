@@ -1460,7 +1460,7 @@ header.blank {
 .table_structured .item {
   position: relative; }
   .table_structured .item:hover {
-    border: 1px solid red; }
+    border: 1px solid #3CA2B9; }
     .table_structured .item:hover .editing {
       display: block; }
 
@@ -1524,5 +1524,24 @@ label {
   -webkit-appearance: none; }
   .select-style select:focus {
     outline: none; }
+
+.add_block a {
+  display: block;
+  position: relative;
+  bottom: 0;
+  height: 3px;
+  background: transparent;
+  line-height: 0;
+  overflow: hidden;
+  font-size: 1px;
+  color: transparent; }
+  .add_block a:hover {
+    padding: 0.5em;
+    line-height: 1em;
+    text-align: center;
+    height: auto;
+    background: #3CA2B9;
+    color: white;
+    font-size: 12px; }
 
 /*# sourceMappingURL=style.css.map */

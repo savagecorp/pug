@@ -242,7 +242,7 @@ header {
   .item {
     position: relative;
     &:hover {
-      border: 1px solid red;
+      border: 1px solid #3CA2B9;
       .editing {display: block;}
     }
   }
@@ -301,6 +301,27 @@ label {
     &:focus {
         outline: none;
     }
+}
+
+.add_block a {
+  display: block;
+  position: relative;
+  bottom: 0;
+  height: 3px;
+  background: transparent;
+  line-height: 0;
+  overflow: hidden;
+  font-size: 1px;
+  color: transparent;
+  &:hover {
+    padding: 0.5em;
+    line-height: 1em;
+    text-align: center;
+    height: auto;
+    background: #3CA2B9;
+    color: white;
+    font-size: 12px;
+  }
 }
 
 
